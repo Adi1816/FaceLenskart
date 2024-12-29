@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
+            min-height: 100vh;
+            font-family: 'Gilroy', sans-serif;
+        }
+        /* Stars animation */
+        .star {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background-color: white;
+            border-radius: 50%;
+            animation: twinkle 2s ease-in-out infinite;
+        }
+
+        /* Star animation effect */
+        @keyframes twinkle {
+            0% {
+                opacity: 0.6;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.2);
+            }
+            100% {
+                opacity: 0.6;
+                transform: scale(1);
+            }
+        }
+
+        /* Random positions for the stars */
+        .star:nth-child(odd) {
+            animation-duration: 2s;
+        }
+        .star:nth-child(even) {
+            animation-duration: 2.5s;
+        }
+
+        .fit-image {
+            object-fit: cover;
+            width: 160px;
+            height: 160px;
+        }
+        .arrow {
+            cursor: pointer;
+            font-size: 2.5rem;
+            color: #fff0f0;
+            transition: transform 0.3s ease, color 0.3s ease;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+        }
+
+        .arrow:hover {
+            transform: scale(1.2);
+            color: #ff284c;
+        }
+    </style>
+</head>
+<body>
+    <div class="relative">
+        <div class="star" style="top: 5%; left: 10%; animation-duration: 2s;"></div>
+        <div class="star" style="top: 8%; left: 15%; animation-duration: 2s;"></div>
+        <div class="star" style="top: 2%; left: 50%; animation-duration: 2s;"></div>
+        <div class="star" style="top: 12%; left: 25%; animation-duration: 2.5s;"></div>
+        <div class="star" style="top: 18%; left: 30%; animation-duration: 2.3s;"></div>
+        <div class="star" style="top: 9%; left: 40%; animation-duration: 2s;"></div>
+        <div class="star" style="top: 20%; left: 70%; animation-duration: 3s;"></div>
+        <div class="star" style="top: 30%; left: 60%; animation-duration: 2s;"></div>
+        <div class="star" style="top: 25%; left: 80%; animation-duration: 2.8s;"></div>
+        <div class="star" style="top: 15%; left: 55%; animation-duration: 1.7s;"></div>
+        
+        <div class="star" style="top: 28%; left: 45%; animation-duration: 2.5s;"></div>
+        <div class="star" style="top: 19%; left: 10%; animation-duration: 2s;"></div>
+        <div class="star" style="top: 33%; left: 35%; animation-duration: 3s;"></div>
+        <div class="star" style="top: 7%; left: 75%; animation-duration: 1.8s;"></div>
+        <div class="star" style="top: 23%; left: 20%; animation-duration: 2.5s;"></div>
+        <div class="star" style="top: 1%; left: 70%; animation-duration: 2.3s;"></div>
+        <div class="star" style="top: 12%; left: 65%; animation-duration: 2.8s;"></div>
+        <div class="star" style="top: 27%; left: 80%; animation-duration: 2s;"></div>
+        <div class="star" style="top: 3%; left: 40%; animation-duration: 1.5s;"></div>
+        <div class="star" style="top: 18%; left: 35%; animation-duration: 2s;"></div>
+        
+        <div class="star" style="top: 9%; left: 55%; animation-duration: 2.5s;"></div>
+        <div class="star" style="top: 17%; left: 60%; animation-duration: 3s;"></div>
+        <div class="star" style="top: 14%; left: 30%; animation-duration: 2.5s;"></div>
+        <div class="star" style="top: 4%; left: 45%; animation-duration: 2s;"></div>
+        <div class="star" style="top: 21%; left: 100%; animation-duration: 1.9s;"></div>
+        <div class="star" style="top: 10%; left: 25%; animation-duration: 2s;"></div>
+        <div class="star" style="top: 26%; left: 50%; animation-duration: 2s;"></div>
+        <div class="star" style="top: 15%; left: 35%; animation-duration: 2.5s;"></div>
+        <div class="star" style="top: 8%; left: 15%; animation-duration: 3s;"></div>
+        <div class="star" style="top: 30%; left: 10%; animation-duration: 2s;"></div>
+        
+        <div class="star" style="top: 12%; left: 55%; animation-duration: 2s;"></div>
+        <div class="star" style="top: 2%; left: 65%; animation-duration: 2.3s;"></div>
+        <div class="star" style="top: 7%; left: 75%; animation-duration: 1.8s;"></div>
+        <div class="star" style="top: 18%; left: 65%; animation-duration: 2.2s;"></div>
+        <div class="star" style="top: 5%; left: 45%; animation-duration: 2.6s;"></div>
+        <div class="star" style="top: 10%; left: 50%; animation-duration: 2.7s;"></div>
+        <div class="star" style="top: 19%; left: 50%; animation-duration: 2.9s;"></div>
+        <div class="star" style="top: 23%; left: 20%; animation-duration: 3.1s;"></div>
+        <div class="star" style="top: 27%; left: 75%; animation-duration: 1.7s;"></div>
+        <div class="star" style="top: 15%; left: 65%; animation-duration: 2.3s;"></div>
+        
+        <div class="star" style="top: 11%; left: 10%; animation-duration: 1.5s;"></div>
+        <div class="star" style="top: 28%; left: 15%; animation-duration: 2.6s;"></div>
+        <div class="star" style="top: 30%; left: 65%; animation-duration: 2s;"></div>
+        <div class="star" style="top: 14%; left: 55%; animation-duration: 2.7s;"></div>
+        <div class="star" style="top: 17%; left: 60%; animation-duration: 3s;"></div>
+        <div class="star" style="top: 4%; left: 30%; animation-duration: 2.3s;"></div>
+        <div class="star" style="top: 25%; left: 10%; animation-duration: 2.5s;"></div>
+        <div class="star" style="top: 10%; left: 50%; animation-duration: 2s;"></div>
+        <div class="star" style="top: 3%; left: 60%; animation-duration: 3s;"></div>
+        <div class="star" style="top: 22%; left: 40%; animation-duration: 1.9s;"></div>
+        
+        <div class="star" style="top: 19%; left: 65%; animation-duration: 2.5s;"></div>
+        <div class="star" style="top: 6%; left: 80%; animation-duration: 2.6s;"></div>
+        <div class="star" style="top: 8%; left: 25%; animation-duration: 2.8s;"></div>
+        <div class="star" style="top: 10%; left: 60%; animation-duration: 3s;"></div>
+        <div class="star" style="top: 29%; left: 75%; animation-duration: 2.5s;"></div>
+        <div class="star" style="top: 17%; left: 25%; animation-duration: 2s;"></div>
+        <div class="star" style="top: 24%; left: 45%; animation-duration: 2.5s;"></div>
+        <div class="star" style="top: 3%; left: 40%; animation-duration: 2.8s;"></div>
+        <div class="star" style="top: 12%; left: 80%; animation-duration: 2.6s;"></div>
+        <div class="star" style="top: 5%; left: 35%; animation-duration: 2s;"></div>
+        
+        <div class="star" style="top: 18%; left: 60%; animation-duration: 2.4s;"></div>
+        <div class="star" style="top: 27%; left: 50%; animation-duration: 3s;"></div>
+        <div class="star" style="top: 21%; left: 30%; animation-duration: 2.5s;"></div>
+        <div class="star" style="top: 29%; left: 25%; animation-duration: 1.5s;"></div>
+        <div class="star" style="top: 9%; left: 45%; animation-duration: 2.9s;"></div>
+        <div class="star" style="top: 10%; left: 15%; animation-duration: 3s;"></div>
+        <div class="star" style="top: 30%; left: 75%; animation-duration: 2.8s;"></div>
+        <div class="star" style="top: 8%; left: 50%; animation-duration: 2s;"></div>
+        <div class="star" style="top: 21%; left: 35%; animation-duration: 3.2s;"></div>
+        <div class="star" style="top: 14%; left: 70%; animation-duration: 2.6s;"></div>
+        
+        <div class="star" style="top: 18%; left: 20%; animation-duration: 2.5s;"></div>
+        <div class="star" style="top: 6%; left: 30%; animation-duration: 1.9s;"></div>
+        <div class="star" style="top: 23%; left: 50%; animation-duration: 3s;"></div>
+        <div class="star" style="top: 26%; left: 15%; animation-duration: 2.7s;"></div>
+        <div class="star" style="top: 8%; left: 55%; animation-duration: 2.5s;"></div>
+        <div class="star" style="top: 7%; left: 45%; animation-duration: 3.2s;"></div>
+        <div class="star" style="top: 12%; left: 30%; animation-duration: 2.8s;"></div>
+        <div class="star" style="top: 19%; left: 20%; animation-duration: 2s;"></div>
+        <div class="star" style="top: 30%; left: 60%; animation-duration: 2.4s;"></div>
+        <div class="star" style="top: 28%; left: 70%; animation-duration: 2.5s;"></div>
+        
+        <div class="star" style="top: 13%; left: 60%; animation-duration: 2s;"></div>
+        <div class="star" style="top: 14%; left: 30%; animation-duration: 1.9s;"></div>
+        <div class="star" style="top: 21%; left: 10%; animation-duration: 2.8s;"></div>
+        <div class="star" style="top: 20%; left: 50%; animation-duration: 2.3s;"></div>
+        <div class="star" style="top: 5%; left: 75%; animation-duration: 2.5s;"></div>
+        <div class="star" style="top: 9%; left: 40%; animation-duration: 3s;"></div>
+        <div class="star" style="top: 18%; left: 25%; animation-duration: 2.8s;"></div>
+        <div class="star" style="top: 22%; left: 55%; animation-duration: 3s;"></div>
+        <div class="star" style="top: 3%; left: 80%; animation-duration: 2.3s;"></div>
+        
+
+        <!-- Landing Page -->
+        <div class="flex flex-col items-center justify-center min-h-screen text-center text-white px-6">
+            <img src="face.jpeg" alt="Her Picture" class="rounded-full w-80 h-80 shadow-lg mb-6 animate__animated animate__fadeIn fit-image">
+            <h1 class="text-4xl font-bold animate__animated animate__zoomIn">For the Love of My Life</h1>
+            <p class="mt-4 text-lg animate__animated animate__fadeInUp">"You are the reason my heart beats, my life’s brightest spark. Always stay as beautiful as you are!"</p>
+            <p class="mt-4 text-lg animate__animated animate__fadeInUp">"I Love you meri Jaan!"</p>
+            <div class="mt-10 animate__animated animate__fadeInDown">
+                <span class="arrow" onclick="document.getElementById('face-analysis').scrollIntoView({ behavior: 'smooth' });">
+                    ❤️ ↓ ❤️
+                </span>
+            </div>
+        </div>
+
+        <!-- Face Analysis Section -->
+        <div id="face-analysis" class="bg-gradient-to-r from-pink-300 to-pink-500 p-12 rounded-lg shadow-xl mx-auto max-w-4xl mt-10 transform transition-all hover:scale-105">
+            <h2 class="text-3xl font-serif text-white mb-6 text-center animate__animated animate__fadeIn">Your Beautiful Face Analysis</h2>
+            <p class="text-white text-lg text-center mb-8 animate__animated animate__fadeInUp">"Every detail of your face is a reflection of your beautiful soul." 💖</p>
+            
+            <!-- <div class="flex justify-center mb-10">
+                <img src="face-analysis.jpg" alt="Face Analysis" class="w-40 h-40 rounded-full shadow-2xl border-4 border-white animate__animated animate__zoomIn">
+            </div> -->
+
+            <div class="bg-white p-8 rounded-lg shadow-2xl">
+                <p class="text-lg font-semibold text-gray-700 mb-4">Here’s what your face analysis tells us:</p>
+                <ul class="list-disc ml-6 text-gray-600 text-lg">
+                    <li><span class="font-bold">Face Shape:</span> Round (69%) + Diamond (14%) + Heart (12%)</li>
+                    <li><span class="font-bold">Skin Tone:</span> Fair (Gori-Gori)</li>
+                    <li><span class="font-bold">Eye Shape:</span> Almond (72.38%) / Upturned (82.02%) / Wide-Set (51.55%) </li>
+                </ul>
+
+                <p class="text-lg text-gray-600 mt-6 mb-4">I've also selected some stylish frames that will add an extra charm to your beauty:</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Frame 1 -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg transform transition-all hover:scale-105 hover:shadow-xl">
+                        <img src="lens1.jpeg" alt="Frame 1" class="w-full h-40 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-serif text-center text-gray-700">Elegant Half Rim Cat Eye Frame</h3>
+                        <p class="text-center text-sm text-gray-500 mt-2">Ideal for your Round face!</p>
+                        <a href="https://www.lenskart.com/lenskart-lk-e17282me-me2-c1-eyeglasses.html" target="_blank" class="block text-center text-blue-500 mt-4 font-semibold hover:text-pink-600">Shop Now</a>
+                    </div>
+
+                    <!-- Frame 2 -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg transform transition-all hover:scale-105 hover:shadow-xl">
+                        <img src="lens2.jpeg" alt="Frame 2" class="w-full h-40 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-serif text-center text-gray-700">Charming Gold Rimless Frame</h3>
+                        <p class="text-center text-sm text-gray-500 mt-2">Perfect for an elegant look!</p>
+                        <a href="https://www.lenskart.com/lenskart-studio-lke000215-c1-eyeglasses.html" target="_blank" class="block text-center text-blue-500 mt-4 font-semibold hover:text-pink-600">Shop Now</a>
+                    </div>
+
+                    <!-- Frame 3 -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg transform transition-all hover:scale-105 hover:shadow-xl">
+                        <img src="lens3.jpeg" alt="Frame 2" class="w-full h-40 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-serif text-center text-gray-700">Harry Potter Gold Frame</h3>
+                        <p class="text-center text-sm text-gray-500 mt-2">Perfect for a Magical look!</p>
+                        <a href="https://www.lenskart.com/lenskart-studio-lk-e17110-c1-eyeglasses.html" target="_blank" class="block text-center text-blue-500 mt-4 font-semibold hover:text-pink-600">Shop Now</a>
+                    </div>
+
+                    <!-- Frame 3 -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg transform transition-all hover:scale-105 hover:shadow-xl">
+                        <img src="lens4.jpeg" alt="Frame 2" class="w-full h-40 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-serif text-center text-gray-700">Rose Gold Rimless Cat Eye</h3>
+                        <p class="text-center text-sm text-gray-500 mt-2">Ideal for your Cute Face!</p>
+                        <a href="https://www.lenskart.com/john-jacobs-jj-e13672-rimless-c1-eyeglasses.html" target="_blank" class="block text-center text-blue-500 mt-4 font-semibold hover:text-pink-600">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for smooth scrolling is included in the inline onclick handler
+    </script>
+</body>
+</html>
